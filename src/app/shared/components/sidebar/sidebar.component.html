@@ -1,0 +1,15 @@
+<div class="sideBar primary-color">
+  <div class="menu">
+    <i class="d-flex justify-content-center mt-2">
+      <img src="assets/img/logo.png" width="60px" height="60px" alt="" />
+    </i>
+
+    <div class="list-options mt-3">
+      <ul *ngFor="let option of options">
+        <li>
+          <i [class]="option.icon"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

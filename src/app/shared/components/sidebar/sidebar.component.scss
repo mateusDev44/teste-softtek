@@ -1,0 +1,21 @@
+.sideBar {
+  position: absolute;
+  height: 100vh;
+  box-shadow: 2px 4px 2px 1px rgba(0, 0, 0, 0);
+
+  .menu {
+    width: 100px;
+
+    .list-options {
+      ul {
+        list-style-type: none;
+        li {
+          i {
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
