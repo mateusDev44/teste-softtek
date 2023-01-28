@@ -1,0 +1,15 @@
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  overflow: auto;
+  .content {
+    padding: 0px 0px 150px 150px;
+  }
+}
+
+
+@media (max-width: 1196px) {
+  .content {
+    padding: 0px 0px 150px 40px !important;
+  }
+}

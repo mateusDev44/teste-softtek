@@ -1,0 +1,23 @@
+<p-card
+  styleClass="cadastral-situation"
+  header="Situação cadastral do CPF"
+  subheader="Consulta na Receita Federal"
+>
+  <div class="d-flex">
+    <i class="fa-solid fa-user"></i>
+    <div>
+      <span class="fs-11 color-neltral-gray fw-400">Nome</span>
+      <p class="fw-500 fs-16">{{ cooperated.name }}</p>
+    </div>
+  </div>
+  <div>
+    <!-- Situação do cpf | 0 = Irregular | 1 = Regular -->
+    <div class="d-flex">
+      <i [class]="cooperated.situation ? 'fa-regular fa-circle-check' : 'fa-regular fa-circle-xmark'"></i>
+      <div>
+        <span class="fs-11 color-neltral-gray fw-400">Situação do CPF</span>
+        <p class="fw-500 fs-16">{{cooperated.situation ? 'Regular' : 'Irregular'}}</p>
+      </div>
+    </div>
+  </div>
+</p-card>

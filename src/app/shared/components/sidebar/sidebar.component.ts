@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IMenu } from '../../interfaces/IMenu';
+import { Menu } from '../../classes/Menu';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,7 +8,7 @@ import { IMenu } from '../../interfaces/IMenu';
 })
 export class SidebarComponent {
 
-  options: IMenu[] = [
+  options: Menu[] = [
     { icon: 'fa-solid fa-bars', route: '' },
     { icon: 'fa-solid fa-magnifying-glass', route: '' },
     { icon: 'fa-regular fa-star', route: '' },

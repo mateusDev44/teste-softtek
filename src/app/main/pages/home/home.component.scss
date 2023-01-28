@@ -1,5 +1,13 @@
+.content-steps {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 500px;
+}
+
 ::ng-deep .p-steps .p-steps-item .p-menuitem-link {
   background: transparent !important;
   transition: box-shadow 0.2s;
   border-radius: 6px;
+  outline: none;
 }

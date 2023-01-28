@@ -1,0 +1,58 @@
+.p-steps .p-steps-item.p-highlight .p-steps-number {
+  background: #165c7d !important;
+  color: #165c7d !important;
+}
+
+.p-steps .p-steps-item .p-steps-number {
+  background: #c6ced1 !important;
+  color: #c6ced1 !important;
+}
+
+.p-steps .p-steps-item .p-menuitem-link .p-steps-number {
+  min-width: 1rem !important;
+  height: 1rem !important;
+  line-height: 2rem !important;
+  font-size: 1rem !important;
+  z-index: 1 !important;
+  border-radius: 50% !important;
+}
+
+.p-steps .p-steps-item .p-steps-title {
+  font-weight: 700 !important;
+  color: #889499 !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+
+.p-steps .p-steps-item.p-highlight .p-steps-title {
+  font-weight: 700 !important;
+  color: #165c7d !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+
+
+.p-card {
+  min-height: 204px;
+  min-width: 270px;
+}
+
+.p-card-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #787878;
+}
+
+.p-card-title {
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 5px !important;
+  color: #040f14;
+}
+
+.p-card .p-card-content {
+  padding: 0 !important;
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -6,15 +6,17 @@ import { MenuItem } from 'primeng/api';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   items!: MenuItem[];
 
   ngOnInit() {
     this.items = [
-      { label: 'Inicio', routerLink: 'etapa/inicial' },
+      { label: 'Inicio', routerLink: 'inicial'},
       { label: 'Documentos' },
       { label: 'Dados Cadastrais' },
       { label: 'Admissão' },
     ];
   }
+
+
 }

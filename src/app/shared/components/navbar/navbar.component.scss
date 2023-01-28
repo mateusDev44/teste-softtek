@@ -1,7 +1,126 @@
 .nav {
   box-shadow: 0 1px 1px -2px #0003, 0 1px 1px #00000024, 0 1px 1px #0000001f;
-  .container{
-    padding-top: 15px;
-    padding-bottom: 15px;
+  .nav-container {
+    padding: 15px 34px 15px 150px;
+  }
+}
+
+.pi-bell {
+  font-size: 25px;
+}
+
+.info {
+  width: 100%;
+  width: 109px;
+  height: 26px;
+  font-weight: 700;
+  margin-left: 10px;
+  background: #ffffff;
+  border: 1px solid #125d79;
+  color: #125d79;
+  border-radius: 15px;
+  text-align: center;
+}
+
+::ng-deep .p-avatar {
+  border-radius: 50% !important;
+  border: 1px solid #125d79 !important;
+}
+
+.fa-gear {
+  position: relative;
+  z-index: 5;
+  right: 10px;
+  top: 3px;
+  cursor: pointer;
+  color: #125d79;
+}
+
+.p-button {
+  color: #ffffff !important;
+  background: #165c7d !important;
+  border: 1px solid #165c7d !important;
+  padding: 0.75rem 1.25rem !important;
+  border-radius: 2px !important;
+  margin-top: 10px;
+}
+
+.btn-menu-responsive {
+  display: none;
+}
+
+.img-menu-responsive {
+  display: none;
+}
+
+.menu-responsive {
+  z-index: 20;
+  background-color: #165c7d;
+  width: 100%;
+  height: 282px;
+  padding-top: 18px !important;
+  border-radius: 40px;
+  box-shadow: 0 1px 1px -2px #0003, 0 1px 1px #00000024, 0 1px 1px #0000001f;
+  .list-options {
+    ul {
+      list-style-type: none;
+      li {
+        i {
+          color: white;
+          cursor: pointer;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .fa-gear {
+    position: relative;
+    z-index: 5;
+    right: 10px;
+    top: 3px;
+    cursor: pointer;
+    color: #ffff;
+  }
+
+  .pi-bell {
+    font-size: 25px;
+    color: #ffff;
+  }
+}
+
+.text-step-responsive {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .nav-container {
+    padding: 15px 34px 15px 50px !important;
+  }
+
+  .user-info {
+    display: none !important;
+  }
+
+  .menu-responsive {
+    display: block;
+  }
+
+  .img-menu-responsive {
+    display: block;
+  }
+
+  .btn-menu-responsive {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 860px) {
+  .text-step {
+    display: none;
+  }
+  .text-step-responsive {
+    display: block;
   }
 }

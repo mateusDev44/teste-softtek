@@ -1,77 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-$primary-color: #165c7d;
-$secondary-color: #ffa300;
-$light-gray: #787878;
-$neltral-gray: #4f575e;
+@import "./styles/colors.scss";
+@import "./styles/customizations-primeng.scss";
+@import "./styles/other-styles.scss";
+@import "./styles/typography.scss";
+@import "./styles/paddings.scss";
 
-.primary-color {
-  background-color: $primary-color;
-}
 
-.color-light-gray {
-  color: $light-gray;
-}
-
-.color-neltral-gray {
-  color: $neltral-gray;
-}
-
-.button-primary {
-  width: 172px;
-  height: 34px;
-  background: #165c7d;
-  border-radius: 2px;
-}
-
-.fs-11 {
-  font-size: 11px;
-}
-
-.fs-12 {
-  font-size: 12px;
-}
-
-.fs-16 {
-  font-size: 16px !important;
-}
-
-.fs-24 {
-  font-size: 24px !important;
-}
-
-.fw-100 {
-  font-weight: 100 !important;
-}
-
-.fw-200 {
-  font-weight: 200 !important;
-}
-
-.fw-300 {
-  font-weight: 300 !important;
-}
-
-.fw-400 {
-  font-weight: 400 !important;
-}
-
-.fw-500 {
-  font-weight: 500 !important;
-}
-
-.fw-600 {
-  font-weight: 600 !important;
-}
-
-.fw-700 {
-  font-weight: 700 !important;
-}
-
-.fw-800 {
-  font-weight: 800 !important;
-}
-
-.fw-900 {
-  font-weight: 900 !important;
-}

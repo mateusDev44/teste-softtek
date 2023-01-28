@@ -1,13 +1,82 @@
 <div class="nav bg-white">
-  <div class="container">
+  <div class="nav-container w-100">
     <div class="row justify-content-between">
-      <div class="col-6">
-        <h3 class="fw-700 fs-24">NOVA ADMISSÃO COOPERADO</h3>
-        <span class="fs-12 fw-400 color-light-gray">
-          Cadastro / Admissão do Cooperado / Nova Admissão de Cooperado
-        </span>
+      <div class="col-8">
+        <div class="d-flex">
+          <img
+            src="assets/img/logo-responsive.png"
+            class="img-menu-responsive"
+            width="150px"
+            height="70px"
+            alt=""
+          />
+          <div class="pl-4 text-step">
+            <h3 class="fw-700 fs-24">NOVA ADMISSÃO COOPERADO</h3>
+            <span class="fs-12 fw-400 color-light-gray">
+              Cadastro / Admissão do Cooperado / Nova Admissão de Cooperado
+            </span>
+          </div>
+        </div>
       </div>
-      <div class="col-4">infos</div>
+      <div class="col-4">
+        <div class="btn-menu-responsive">
+          <button
+            pButton
+            type="button"
+            (click)="menuResponsive = !menuResponsive"
+          >
+            <i
+              [class]="
+                !menuResponsive ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'
+              "
+            ></i>
+          </button>
+        </div>
+        <div class="user-info d-flex justify-content-end pt-14">
+          <span class="pl-10">
+            <i class="pi pi-bell" pBadge severity="danger" value="2"></i>
+          </span>
+          <div class="info pl-10">VIACREDI</div>
+          <div class="position-relative pl-10">
+            <p-avatar image="/assets/img/avatar.png"></p-avatar>
+            <i class="fa-solid fa-gear"></i>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+
+<div class="menu-responsive" *ngIf="menuResponsive">
+  <div class="row w-100">
+    <div class="col-2">
+      <div class="list-options">
+        <ul *ngFor="let option of options">
+          <li>
+            <i [class]="option.icon"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-10">
+      <div class="d-flex justify-content-end">
+        <span class="pl-10">
+          <i class="pi pi-bell" pBadge severity="danger" value="2"></i>
+        </span>
+        <div class="info pl-10">VIACREDI</div>
+        <div class="position-relative pl-10">
+          <p-avatar image="/assets/img/avatar.png"></p-avatar>
+          <i class="fa-solid fa-gear"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pt-4 text-center text-step-responsive">
+  <h3 class="fw-700 fs-24">NOVA ADMISSÃO COOPERADO</h3>
+  <span class="fs-12 fw-400 color-light-gray">
+    Cadastro / Admissão do Cooperado / Nova Admissão de Cooperado
+  </span>
 </div>

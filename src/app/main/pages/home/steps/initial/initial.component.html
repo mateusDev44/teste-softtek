@@ -1,0 +1,60 @@
+<div class="initial mt-4">
+  <h2 class="fw-500 fs-16">Informe o CPF do futuro cooperado (a)</h2>
+  <span class="fw-400 fs-11 color-neltral-gray">
+    Se necessário, você poderá duplicar uma conta existente ou pausar e retomar
+    este cadastro futuramente. Digite apenas os números (sem pontos ou traços).
+  </span>
+
+  <div class="form mt-2">
+    <strong>CPF</strong>
+    <div class="d-sm-flex d-block justify-content-sm-start">
+      <input
+        type="text"
+        [(ngModel)]="cpf"
+        placeholder="1234"
+        [class]="
+          cpfModel.invalid && cpfModel.touched ? 'ng-invalid ng-dirty' : ''
+        "
+        #cpfModel="ngModel"
+        mask="000.000.000-00"
+        pInputText
+        placeholder="000.000.000-00"
+        required
+      />
+
+      <div class="button-search pt-sm-0 pt-3">
+        <button
+          pButton
+          type="button"
+          label="Consultar por CPF"
+          (click)="search()"
+          [loading]="isLoading"
+          [disabled]="!cpf"
+        ></button>
+      </div>
+    </div>
+    <span *ngIf="cpfModel.invalid && cpfModel.touched" class="error-msg">
+      {{ cpf.length > 0 ? "Digite os 11 números do seu cpf" : "Digite um cpf" }}
+    </span>
+  </div>
+
+  <ng-container *ngIf="cooperated.cpf && applicationAccount.currentAccount && !isLoading">
+    <div class="d-xl-flex d-block justify-content-xl-start justify-content-center mt-4">
+      <div class="pt-3">
+        <div class="w-cards">
+          <app-card-cadastral-situation [cooperated]="cooperated"/>
+        </div>
+      </div>
+      <div class="pt-3">
+        <div class="w-cards">
+          <app-card-application-account [applicationAccount]="applicationAccount"/>
+        </div>
+      </div>
+      <div class="pt-3">
+        <div class="w-cards">
+          <app-card-current-account [currentAccount]="currentAccount"/>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

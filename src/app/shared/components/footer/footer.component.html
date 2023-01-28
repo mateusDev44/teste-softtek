@@ -1,0 +1,21 @@
+<footer>
+  <div class="content">
+    <div class="d-sm-flex d-block">
+      <div class="pl-10" *ngIf="currentStep === 'initial' && startNewAdmission">
+        <button
+          pButton
+          type="button"
+          label="Iniciar nova admissão"
+        ></button>
+      </div>
+      <div class="pl-10 btn-account-opening">
+        <button
+          pButton
+          type="button"
+          label="Dicas para abertura da conta"
+          class="p-button-outlined"
+        ></button>
+      </div>
+    </div>
+  </div>
+</footer>

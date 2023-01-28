@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
+import { InitialComponent } from './steps/initial/initial.component';
 
 const routes: Routes = [
   {
@@ -8,11 +9,13 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       {
-        path: 'etapa',
-        loadChildren: () =>
-          import('../steps/steps.module').then(
-            (m) => m.StepsModule
-          ),
+        path: '',
+        redirectTo: 'inicial',
+        pathMatch: 'full',
+      },
+      {
+        path: 'inicial',
+        component: InitialComponent,
       },
     ],
   },

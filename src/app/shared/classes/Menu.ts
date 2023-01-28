@@ -1,6 +1,4 @@
-import { IMenu } from "../interfaces/IMenu";
-
 export class Menu {
-  icon: string = ''
-  route = '';
+  icon: string = "";
+  route: string = "";
 }

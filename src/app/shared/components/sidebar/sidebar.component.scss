@@ -1,6 +1,7 @@
 .sideBar {
   position: absolute;
-  height: 100vh;
+  z-index: 10;
+  min-height: 100%;
   box-shadow: 2px 4px 2px 1px rgba(0, 0, 0, 0);
 
   .menu {
@@ -13,9 +14,17 @@
           i {
             color: white;
             cursor: pointer;
+            font-size: 25px;
           }
         }
       }
     }
+  }
+}
+
+
+@media (max-width: 1300px) {
+  .sideBar{
+    display: none;
   }
 }
