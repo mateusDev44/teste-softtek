@@ -43,13 +43,16 @@ export class InitialComponent implements OnInit, OnDestroy {
   }
 
   public search(): void {
+    // Valida o cpf inserido
     if (this.validateCpfField()) {
       this.loading(true);
       this.CooperativeSubscription = this.cooperativeService
         .listCooperated(this.cpf)
         .subscribe(
           (data) => {
+            // Valida o retorno da requisição pra verificar se não retornou vazio
             if (this.validateRequestReturn(data)) {
+              // Apos o retorno ser positivo inicia-se a listagem das contas de aplicação e corrente
               this.cooperated = data[0];
               this.findApplicationAccount(data[0]);
               this.findCurrentAccount(data[0]);
@@ -69,11 +72,10 @@ export class InitialComponent implements OnInit, OnDestroy {
     }
   }
 
-  loading(state: boolean, time?: number){
+  loading(state: boolean, time?: number) {
     setTimeout(() => {
       this.isLoading = state;
     }, time || 0);
-
   }
 
   findApplicationAccount(cooperad: Cooperated): void {
@@ -89,12 +91,13 @@ export class InitialComponent implements OnInit, OnDestroy {
             'Erro ao realizar a busca',
             `Erro ${error.status}`
           );
+          this.resetResults();
         }
       );
   }
 
   findCurrentAccount(cooperad: Cooperated): void {
-    this.ApplicationAccountSubscription = this.cooperativeService
+    this.CurrentAccountSubscription = this.cooperativeService
       .listCurrentAccount(cooperad.id)
       .subscribe(
         (data) => {
@@ -105,6 +108,7 @@ export class InitialComponent implements OnInit, OnDestroy {
             'Erro ao realizar a busca',
             `Erro ${error.status}`
           );
+          this.resetResults();
         }
       );
   }
@@ -132,11 +136,12 @@ export class InitialComponent implements OnInit, OnDestroy {
     this.applicationAccount = new ApplicationAccount();
     this.currentAccount = new CurrentAccount();
     this.footerService.approveStartNewAdmission(false);
-    this.loading(false);
+    this.footerService.approveStartNewAdmission(false);
   }
 
   ngOnDestroy(): void {
     this.CooperativeSubscription.unsubscribe();
     this.ApplicationAccountSubscription.unsubscribe();
+    this.CurrentAccountSubscription.unsubscribe();
   }
 }
