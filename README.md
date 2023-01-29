@@ -7,12 +7,12 @@ Projeto construido com o Angular 15.0.0 a versão mais atualizada e com o node n
 Após baixa-lo na sua máquina deve-se abrir o terminal cmd, power shell, git bash e etc... garantir que esta dentro da pasta do projeto e executar primeiramente o comando npm install para instalar todas as dependencias presentes no projeto. Essas dependências podem ser encontradas no arquivo package.json. Após instalar todas as depêndencias para rodar o projeto execute o comando ng serve. Pra rodar a api json server ir no link desse repositório: https://github.com/mateusDev44/json-server-consultar-cpf e baixar também a api mock, rodar o comando npm install e rodar a api com o comando: json-server --watch db.json
 
 ## Testar o projeto
-Para realizar o teste da aplicação para o caminho feliz, testar com os seguintes cpfs:' 
-59251792500
-95258462617
-95258462617
-11709147300
-72427651290
+Para realizar o teste da aplicação para o caminho feliz, testar com os seguintes cpfs:
+59251792500,
+95258462617,
+95258462617,
+11709147300,
+72427651290,
 41852809558
 
 Para simular um erro de busca, basta digitar qualquer cpf sem ser os de exemplo.
