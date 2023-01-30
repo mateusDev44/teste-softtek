@@ -29,6 +29,9 @@ No projeto foi utilizado o PrimeNg e o boostrap como libs de estilização. O Pr
 
 A arquitetura do projeto Angular é toda baseada em componentização. Utilizando o conceito da modulação utiliza-se o Lazy loading, para facilitar na renderização dos componentes, ajudando numa melhor performance do sistema ao todo. Separando cada parte da aplicação em modulos, e os referenciando no modulo principal main deixando o app.module mais limpo. Utilizando também os conceitos do clean code, para fazer códigos fáceis de reutilizar e de entender. Fazendo funções pequenas e com nomes sugestivos respeitando sempre o princípio da responsabilidade única. Também e criado todas as classes dos dados que vão ser retornados, para poder facilitar o que cada objeto vai conter de dados e os tipos de dados que são permitidos.
 
+## Rodar o teste unitario
+Digitar o comando ng test
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

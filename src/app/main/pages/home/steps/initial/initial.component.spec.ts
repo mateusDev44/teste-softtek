@@ -22,7 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ApplicationAccount } from 'src/app/shared/classes/ApplicationAccount';
 import { CurrentAccount } from 'src/app/shared/classes/CurrentAccount';
 
-fdescribe('InitialComponent', () => {
+describe('InitialComponent', () => {
   let component: InitialComponent;
   let fixture: ComponentFixture<InitialComponent>;
   let originalTimeout: number;
