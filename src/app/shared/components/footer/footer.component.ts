@@ -28,8 +28,8 @@ export class FooterComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.CurrentStepSubscription.unsubscribe();
-    this.StartNewAdmissionSubscription.unsubscribe();
+    this.CurrentStepSubscription?.unsubscribe();
+    this.StartNewAdmissionSubscription?.unsubscribe();
   }
 
 }

@@ -1,5 +1,5 @@
 export class ApplicationAccount {
-  id: string = "";
+  id: number = 0;
   currentAccount: string = "";
   agency: string = "";
   bank: string = "";

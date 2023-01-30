@@ -140,8 +140,8 @@ export class InitialComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.CooperativeSubscription.unsubscribe();
-    this.ApplicationAccountSubscription.unsubscribe();
-    this.CurrentAccountSubscription.unsubscribe();
+    this.CooperativeSubscription?.unsubscribe();
+    this.ApplicationAccountSubscription?.unsubscribe();
+    this.CurrentAccountSubscription?.unsubscribe();
   }
 }
