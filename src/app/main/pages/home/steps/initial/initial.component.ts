@@ -137,6 +137,7 @@ export class InitialComponent implements OnInit, OnDestroy {
     this.currentAccount = new CurrentAccount();
     this.footerService.approveStartNewAdmission(false);
     this.footerService.approveStartNewAdmission(false);
+    this.loading(false);
   }
 
   ngOnDestroy(): void {
